@@ -1,0 +1,296 @@
+body{
+    background-color: #00416a;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-family: 'Manrope', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+body, html{
+    height: 100%;
+}
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+input{
+    height: 30px;
+    width: 30px;
+    appearance: none;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0;
+}
+input:hover{
+    cursor: pointer;
+}
+.tri-state-toggle{
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    border: 3px solid black;
+    border-radius: 50px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 3px;
+    padding-left: 3px;  
+}
+#one{
+    opacity: 1;
+    background-color: rgba(255, 0, 0, 1);
+}
+#one:checked{
+    background-color: rgba(255, 0, 0, 1);
+}
+#two:checked{
+    background-color: #FF5F1F;
+}
+#three:checked{
+    background-color: aqua;
+}
+main .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .header #tittle{
+    font-size: 40px;
+    font-weight: bold;
+}
+main .header .theme .choice .number-choice{
+    display: flex;
+    justify-content: space-around;
+    font-size: 23px;
+    margin-bottom: 4px;
+}
+main .header .theme{
+    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .header .theme #theme-text{
+    margin-right: 28px;
+    font-size: 22px;
+    font-weight: bold;
+}
+main .visor{
+    height: 117px;
+    margin-top: 30px;
+    text-align: right;
+    padding: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+}
+main .visor #result{
+    font-size: 50px;
+}
+main .numbers{
+    display: grid;
+    grid-template-areas: "seven eight nine del"
+                         "four five six plus"
+                         "one two three minus"
+                         "dot zero divided-by times"
+                         "reset reset equals equals"; 
+    grid-row-gap: 30px;
+    grid-column-gap: 23px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 35px;
+    height: auto;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, auto);
+}
+main .numbers #seven{
+    grid-area: seven;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #eight{
+    grid-area: eight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #nine{
+    grid-area: nine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #del{
+    grid-area: del;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #four{
+    grid-area: four;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #five{
+    grid-area: five;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #six{
+    grid-area: six;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #plus{
+    grid-area: plus;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #oneDigit{
+    grid-area: one;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #one:hover{
+    opacity: 0.7;
+}
+main .numbers #two{
+    grid-area: two;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #three{
+    grid-area: three;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #minus{
+    grid-area: minus;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #dot{
+    grid-area: dot;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #zero{
+    grid-area: zero;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #divided-by{
+    grid-area: divided-by;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #times{
+    grid-area: times;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #reset{
+    grid-area: reset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers #equals{
+    grid-area: equals;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main .numbers .digit{
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+main .numbers .digit:hover{
+    opacity: 0.7;
+}
+main .numbers #equals{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.8);
+}
+main .numbers #equals:hover, #del:hover, #reset:hover{
+    opacity: 0.7;
+}
+main .numbers #del, #reset{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #003989;
+    color: white;
+}
+@media (max-width: 620px){
+    main .visor{
+        padding: 13px;
+        width: 350px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    main .visor #result{
+        font-size: 40px;
+    }
+    main .container .numbers{
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        width: 350px;
+        grid-template-rows: repeat(4, 40px);
+        font-size: 18px;
+    }
+    main .container .numbers > p{
+        font-size: 18px;
+    }
+    main .container .numbers #del, #reset, #equals{
+        font-size: 18px;
+    }
+    main .header{
+        width: 350px;
+    }
+    main .container .header .theme{
+        font-size: 16px;
+        margin-left: 20px;
+    }
+    main .container .header .theme #theme-text{
+        font-size: 18px;
+        
+    }
+    main .container .header #tittle{
+        font-size: 34px;
+    }
+}
